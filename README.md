@@ -4,11 +4,13 @@ RPG tático cooperativo para celular, de expedições curtas a masmorras, com co
 
 ## A ideia
 
-O jogo leva a mecânica de um RPG de mesa para partidas curtas no celular, jogado em pé. Cada combate acontece num tabuleiro pequeno, com poucas decisões por turno e efeito claro em cada uma.
+O jogo leva a mecânica de um RPG de mesa para partidas curtas no celular, com o celular na vertical. Cada combate acontece num tabuleiro pequeno, com poucas decisões por turno e efeito claro em cada uma.
 
 O público é quem conhece RPG de mesa e quer partidas rápidas no celular. O desenho prevê de 1 a 5 jogadores no mesmo grupo.
 
 A base de regras é o System Reference Document 5.1 (SRD 5.1), sob a licença Creative Commons Attribution 4.0 International (CC-BY 4.0). As regras foram adaptadas ao formato: alcances medidos em casas, uma criatura por casa e áreas de efeito desenhadas sobre a grade.
+
+This work includes material taken from the System Reference Document 5.1 ("SRD 5.1") by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
 ## Estado atual
 
@@ -87,7 +89,6 @@ Rodada 1
 Guerreiro Brann se move para a coluna 3, fileira 3.
 Guerreiro Brann ataca Saqueador com Espada longa: 20 contra CA 13, acerta e causa 12 de dano.
 Saqueador ataca Guerreiro Brann com Machado grande: 21 contra CA 18, acerta e causa 12 de dano.
-Rodada 2
 ```
 
 ## Como foi construído
@@ -115,7 +116,7 @@ Medidos no repositório e nos registros do ciclo:
 1. **Motor determinístico e separado da interface.** Assim cada combate pode ser reproduzido num teste, simulado em lote e retomado a partir da lista de comandos.
 2. **Regras como dados, com as constantes de equilíbrio nomeadas.** Assim o equilíbrio é ajustado pelos resultados de simulação sem mexer na lógica.
 3. **Teste de aceitação escrito antes de cada tarefa e bloqueado para quem implementa.** Assim o que conta como pronto fica definido antes do código, e cada tarefa entregue vira teste de regressão.
-4. **Tabuleiro pequeno, em casas, com uma criatura por casa.** Isso cabe na tela do celular em pé e mantém poucas opções por turno, com alcances e áreas fáceis de ler.
+4. **Tabuleiro pequeno, em casas, com uma criatura por casa.** Isso cabe na tela do celular na vertical e mantém poucas opções por turno, com alcances e áreas fáceis de ler.
 5. **Troca do tabuleiro de 6 × 3 para 5 × 6 introduzida como opção.** O tabuleiro antigo continuou o padrão até a simulação comparar os dois formatos em taxa de vitória, duração e ataques de oportunidade. Nada que já funcionava quebrou.
 
 ## Tecnologia
